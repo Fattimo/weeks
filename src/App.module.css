@@ -1,0 +1,39 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.GoalGrid {
+  display: grid;
+  grid-template-columns: min-content repeat(7, 1fr);
+  text-align: center;
+}
+
+.GoalRow {
+  white-space: nowrap;
+}
+
+.AddButton {
+  grid-column: 1 / -1;
+}
+
+.CounterContainer {
+  display: flex;
+  gap: 5px;
+}
+
+.Counter {
+  aspect-ratio: 1 / 1;
+  width: 4px;
+  border: 1px solid black;
+}
+
+.Counter.active {
+  background-color: red;
+}
+
+.Counter.impossible {
+  border: 1px solid grey;
+}
